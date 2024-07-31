@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ListView</string>
+    <string-array name="ITBoys">
+        <item>Hamza</item>
+        <item> Zeeshan</item>
+        <item> Khalid</item>
+        <item> Faheem</item>
+        <item> Akhtar</item>
+        <item> Osama</item>
+        <item> Mehboob</item>
+        <item> Sakhawat</item>
+        <item> Jawad</item>
+        <item> Saqlain</item>
+
+
+    </string-array>
+</resources>
