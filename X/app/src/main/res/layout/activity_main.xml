@@ -32,7 +32,8 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/copy"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"/>
         </androidx.cardview.widget.CardView>
 
         <ImageView
@@ -40,7 +41,7 @@
             android:layout_width="36dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="130dp"
             android:src="@drawable/twitter"></ImageView>
 
     </LinearLayout>

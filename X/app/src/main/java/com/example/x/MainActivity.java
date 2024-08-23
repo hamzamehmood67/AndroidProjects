@@ -48,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
                         fragment=new SearchFragment();
                         break;
                     case 2:
-                        fragment=new ServiceFrag();
+                        fragment=new NotificationFragment();
                         break;
                     case 3:
-                        fragment=new ProfileFrag();
+                        fragment=new MessageFragment();
                         break;
 
 

@@ -35,87 +35,19 @@ public class NotificationFragment extends Fragment {
         recyclerView.setAdapter(notificationAdapter);
 
         // Populate the tweetList with data
-        loadTweets();
+        loadNotification();
 
         return view;
     }
 
-    private void loadTweets() {
+    private void loadNotification() {
         // Static data to simulate tweets
-        tweetList.add(new Tweet("Maleeha Hashmey",
-                "عمران خان نے آج جلسہ منسوخ کرنے کا فیصلہ کیا ہے تو بہت سوچ سمجھ کر کیا ہو گا۔",
-                628000,
-                50,
-                32000000));
-
-        tweetList.add(new Tweet("Aun Ali Khosa",
-                "بسم اللہ الرحمن الرحیم\n"
-                        + "سمجھ سے باہر ہے کہ لاکھوں لوگوں کے شکریہ کا حق کیسے ادا ہو۔",
-
-                49000,
-                40,
-                238000));
-
-        tweetList.add(new Tweet("Enkidu Reborn",
-                "A tweet about recent events with a picture.",
-
-                6000,
-                244,
-                3500000));
-
-        tweetList.add(new Tweet("Maleeha Hashmey",
-                "عمران خان نے آج جلسہ منسوخ کرنے کا فیصلہ کیا ہے تو بہت سوچ سمجھ کر کیا ہو گا۔",
-                628,
-                564,
-                32000000));
-
-        tweetList.add(new Tweet("Aun Ali Khosa",
-                "بسم اللہ الرحمن الرحیم\n"
-                        + "سمجھ سے باہر ہے کہ لاکھوں لوگوں کے شکریہ کا حق کیسے ادا ہو۔",
-
-                490,
-                342,
-                238000));
-
-        tweetList.add(new Tweet("Enkidu Reborn",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting " +
-                        "industry. Lorem Ipsum has been the industry's standard dummy tex" +
-                        "t ever since the 1500s, when an unknown printer took a galley of typ" +
-                        "e and scrambled it to make a type specimen book.",
-
-                600,
-                12,
-                3500));
-        tweetList.add(new Tweet("Enkidu Reborn",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting " +
-                        "industry. Lorem Ipsum has been the industry's standard dummy tex" +
-                        "t ever since the 1500s, when an unknown printer took a galley of typ" +
-                        "e and scrambled it to make a type specimen book.",
-
-                600,
-                25,
-                3500000));
-        tweetList.add(new Tweet("Enkidu Reborn",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting " +
-                        "industry. Lorem Ipsum has been the industry's standard dummy tex" +
-                        "t ever since the 1500s, when an unknown printer took a galley of typ" +
-                        "e and scrambled it to make a type specimen book.",
-
-                685,
-                231,
-                3500000));
-        tweetList.add(new Tweet("Enkidu Reborn",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting " +
-                        "industry. Lorem Ipsum has been the industry's standard dummy tex" +
-                        "t ever since the 1500s, when an unknown printer took a galley of typ" +
-                        "e and scrambled it to make a type specimen book.",
-
-                86,
-                12,
-                3500));
+        notificationList.add(new notification("Hamza", " liked your pic", "2h ago"));
+        notificationList.add(new notification("Ali", " liked your pic", "2h ago"));
+        notificationList.add(new notification("Umar", " liked your pic", "2h ago"));
 
         // Notify the adapter that the data has changed
-        tweetAdapter.notifyDataSetChanged();
+        notificationAdapter.notifyDataSetChanged();
     }
 
 }
