@@ -3,17 +3,18 @@ package com.example.x;
 public class Tweet {
     private String author;
     private String content;
-    private String timestamp;
     private int likes;
     private int retweets;
+    private int imp;
 
     public Tweet(){};
-    public Tweet(String author, String content, int likes, int retweets)
+    public Tweet(String author, String content, int likes, int retweets, int imp)
     {
         this.author=author;
         this.content=content;
         this.likes=likes;
         this.retweets=retweets;
+        this.imp=imp;
     }
 
     public String getAuthor(){
@@ -45,5 +46,14 @@ public class Tweet {
 
     public void updateRetweets(){
         this.retweets+=1;
+    }
+
+    public int getImp(){
+        return imp;
+    }
+
+    public void setImp(int imp)
+    {
+        this.imp=imp;
     }
 }

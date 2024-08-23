@@ -30,6 +30,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.TweetViewHol
         holder.content.setText(tweet.getContent());
         holder.likes.setText(String.valueOf(tweet.getLikes()));
         holder.retweets.setText(String.valueOf(tweet.getRetweets()));
+        holder.impressions.setText(String.valueOf(tweet.getImp()));
     }
 
     @Override
@@ -38,15 +39,15 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.TweetViewHol
     }
 
     public class TweetViewHolder extends RecyclerView.ViewHolder {
-        TextView author, content, timestamp, likes, retweets;
+        TextView author, content, likes, retweets,impressions;
 
         public TweetViewHolder(View itemView) {
             super(itemView);
             author = itemView.findViewById(R.id.author);
             content = itemView.findViewById(R.id.content);
-
             likes = itemView.findViewById(R.id.likes);
             retweets = itemView.findViewById(R.id.retweets);
+            impressions=itemView.findViewById(R.id.imp);
         }
     }
 }

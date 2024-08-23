@@ -16,23 +16,23 @@ import com.example.x.TweetAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends Fragment {
+public class NotificationFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    private TweetAdapter tweetAdapter;
-    private List<Tweet> tweetList;
+    private NotificationAdapter notificationAdapter;
+    private List<notification> notificationList;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_notification, container, false);
 
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        tweetList = new ArrayList<>();
-        tweetAdapter = new TweetAdapter(tweetList);
-        recyclerView.setAdapter(tweetAdapter);
+        notificationList = new ArrayList<>();
+        notificationAdapter = new NotificationAdapter(notificationList);
+        recyclerView.setAdapter(notificationAdapter);
 
         // Populate the tweetList with data
         loadTweets();

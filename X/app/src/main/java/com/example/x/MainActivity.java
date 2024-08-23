@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         fragment=new HomeFragment();
                         break;
                     case 1:
-                        fragment=new AboutFrag();
+                        fragment=new SearchFragment();
                         break;
                     case 2:
                         fragment=new ServiceFrag();
