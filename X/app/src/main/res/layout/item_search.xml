@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="8dp"
     android:gravity="center_vertical">
 
@@ -20,4 +20,18 @@
         android:textStyle="bold"
         android:singleLine="true"
         android:ellipsize="end" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:paddingLeft="8dp"
+        android:text="102k posts"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end" />
+
+
 </LinearLayout>

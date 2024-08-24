@@ -17,8 +17,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
-    CardView cardView;
+public class Profile extends AppCompatActivity {
     TabLayout tabs;
     Fragment fragment=null;
     FrameLayout frameLayout;
@@ -28,18 +27,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profile);
+
         frameLayout=findViewById(R.id.framelayout);
         tabs=findViewById(R.id.tabs);
-        cardView= findViewById(R.id.profile_image1);
 
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent I =new Intent(getApplicationContext(), Profile.class);
-                startActivity(I);
-            }
-        });
 
         fragment=new HomeFragment();
         fragmentManager=getSupportFragmentManager();
@@ -57,13 +49,10 @@ public class MainActivity extends AppCompatActivity {
                         fragment=new HomeFragment();
                         break;
                     case 1:
-                        fragment=new SearchFragment();
+                        fragment=new MentionFragment();
                         break;
                     case 2:
-                        fragment=new NotificationFragment();
-                        break;
-                    case 3:
-                        fragment=new MessageFragment();
+                        fragment=new FavouriteFragment();
                         break;
 
 
