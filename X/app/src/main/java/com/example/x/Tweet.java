@@ -1,6 +1,9 @@
 package com.example.x;
 
+import java.util.UUID;
+
 public class Tweet {
+    private String Id;
     private String author;
     private String content;
     private int likes;
@@ -10,13 +13,16 @@ public class Tweet {
     public Tweet(){};
     public Tweet(String author, String content, int likes, int retweets, int imp)
     {
+        this.Id= UUID.randomUUID().toString();
         this.author=author;
         this.content=content;
         this.likes=likes;
         this.retweets=retweets;
         this.imp=imp;
     }
-
+    public String getId(){
+        return Id;
+    }
     public String getAuthor(){
         return author;
     }
